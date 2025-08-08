@@ -10,12 +10,14 @@
     "tsc": "pnpm --parallel -r run tsc",
     "lint": "pnpm --parallel -r run lint",
     "build": "pnpm --parallel -r run build",
-    "validate": " pnpm format:write && pnpm tsc && pnpm lint && pnpm build"
+    "validate": " pnpm format:write && pnpm tsc && pnpm lint && pnpm build",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "husky": "^8.0.0"
   }
 }
